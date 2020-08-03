@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Grid} from "@material-ui/core";
+
+import HomePage from "./components/HomePage/HomePage";
+import Header from "./components/Header/Header";
+
+import {
+	ThemeProvider,
+	createMuiTheme,
+	responsiveFontSizes,
+} from "@material-ui/core/styles";
+import {darkThemeProperties} from "./utils/theme";
+
+import {useStyles} from "./components/HomePage/HomePageStyles";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const classes = useStyles();
+	let darkTheme = createMuiTheme(darkThemeProperties);
+	darkTheme = responsiveFontSizes(darkTheme);
+
+	return (
+		<>
+			<ThemeProvider theme={darkTheme}>
+				<Header />
+				<Grid container>
+					<Grid item xs={false} lg={1} />
+					<Grid item xs={12} lg={10} className={classes.root}>
+						<HomePage />
+					</Grid>
+					<Grid item xs={false} lg={1} />
+				</Grid>
+			</ThemeProvider>
+		</>
+	);
 }
 
 export default App;

@@ -4,17 +4,7 @@ import {Grid} from "@material-ui/core";
 
 import PhotoCard from "../PhotoCard/PhotoCard";
 
-const moment = require("moment");
-
-const getDateLastThirtyDays = () => {
-	let day = new Date();
-	const DateLastThirtyDays = [];
-	for (let i = 0; i < 30; i++) {
-		DateLastThirtyDays.push(moment(day).format("YYYY-MM-DD"));
-		day = moment(day).subtract(1, "days");
-	}
-	return DateLastThirtyDays;
-};
+import {getDateLastThirtyDays} from "../../utils/helperFunctions";
 
 const arrOfPhotoInfo = [];
 
@@ -24,12 +14,17 @@ function PhotoGallery() {
 			fetch(
 				`https://api.nasa.gov/planetary/apod?date=${date}&api_key=wAPiFsefOy4RQSsHYgWPXReZA2k4GnpNF3hkg33o`
 			)
-				.then((res) => res.json())
+				.then((res) => {
+					if (!res.ok) {
+						throw new Error("Network response was not ok");
+					}
+					return res.json();
+				})
 				.then((result) => {
 					arrOfPhotoInfo.push(result);
 				})
 				.catch((error) => {
-					console.log(error);
+					console.error("Error:", error);
 				});
 		});
 	}, []);

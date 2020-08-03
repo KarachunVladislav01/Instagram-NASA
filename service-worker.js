@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Instagram-NASA/precache-manifest.ab0399d213274f4782f6a6e4d4460b79.js"
+  "/Instagram-NASA/precache-manifest.4eda5540174cc6f23950f9410eeb1568.js"
 );
 
 self.addEventListener('message', (event) => {

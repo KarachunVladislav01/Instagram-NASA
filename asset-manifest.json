@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Instagram-NASA/static/css/main.b8ac7825.chunk.css",
-    "main.js": "/Instagram-NASA/static/js/main.2d37cc6a.chunk.js",
-    "main.js.map": "/Instagram-NASA/static/js/main.2d37cc6a.chunk.js.map",
+    "main.js": "/Instagram-NASA/static/js/main.51f6670f.chunk.js",
+    "main.js.map": "/Instagram-NASA/static/js/main.51f6670f.chunk.js.map",
     "runtime-main.js": "/Instagram-NASA/static/js/runtime-main.49f909e1.js",
     "runtime-main.js.map": "/Instagram-NASA/static/js/runtime-main.49f909e1.js.map",
-    "static/js/2.7b2cfd99.chunk.js": "/Instagram-NASA/static/js/2.7b2cfd99.chunk.js",
-    "static/js/2.7b2cfd99.chunk.js.map": "/Instagram-NASA/static/js/2.7b2cfd99.chunk.js.map",
+    "static/js/2.ff19e1d4.chunk.js": "/Instagram-NASA/static/js/2.ff19e1d4.chunk.js",
+    "static/js/2.ff19e1d4.chunk.js.map": "/Instagram-NASA/static/js/2.ff19e1d4.chunk.js.map",
     "index.html": "/Instagram-NASA/index.html",
-    "precache-manifest.ab0399d213274f4782f6a6e4d4460b79.js": "/Instagram-NASA/precache-manifest.ab0399d213274f4782f6a6e4d4460b79.js",
+    "precache-manifest.4eda5540174cc6f23950f9410eeb1568.js": "/Instagram-NASA/precache-manifest.4eda5540174cc6f23950f9410eeb1568.js",
     "service-worker.js": "/Instagram-NASA/service-worker.js",
     "static/css/main.b8ac7825.chunk.css.map": "/Instagram-NASA/static/css/main.b8ac7825.chunk.css.map",
-    "static/js/2.7b2cfd99.chunk.js.LICENSE.txt": "/Instagram-NASA/static/js/2.7b2cfd99.chunk.js.LICENSE.txt"
+    "static/js/2.ff19e1d4.chunk.js.LICENSE.txt": "/Instagram-NASA/static/js/2.ff19e1d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.49f909e1.js",
-    "static/js/2.7b2cfd99.chunk.js",
+    "static/js/2.ff19e1d4.chunk.js",
     "static/css/main.b8ac7825.chunk.css",
-    "static/js/main.2d37cc6a.chunk.js"
+    "static/js/main.51f6670f.chunk.js"
   ]
 }
